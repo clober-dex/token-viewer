@@ -36,4 +36,4 @@ Empty array for unsupported chains.
 
 #### Defined in
 
-[index.ts:20](https://github.com/clober-dex/token-balance-viewer/blob/42472ff/src/index.ts#L20)
+[index.ts:20](https://github.com/clober-dex/token-viewer/blob/d618c50/src/index.ts#L20)
