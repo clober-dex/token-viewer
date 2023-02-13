@@ -16,6 +16,8 @@ We plan to support more chains.
 | Ethereum        | `0x9C11068da5E8956D14ca6f4a8c9E2b782B99fdfB`            |
 | Polygon         | `0x9C11068da5E8956D14ca6f4a8c9E2b782B99fdfB`            |
 | Arbitrum        | `0x9C11068da5E8956D14ca6f4a8c9E2b782B99fdfB`            |
+| Goerli          | `0x9C11068da5E8956D14ca6f4a8c9E2b782B99fdfB`            |
+| Arbitrum Goerli | `0x9C11068da5E8956D14ca6f4a8c9E2b782B99fdfB`            |
 
 ## Installation
 
