@@ -23,7 +23,7 @@
     "lint:fix:sol": "prettier --write 'contracts/**/*.sol' && solhint 'contracts/**/*.sol' --fix"
   },
   "keywords": [],
-  "author": "Clober Team <official@clober.io>",
+  "author": "Clober<official@clober.io>",
   "license": "MIT",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.0",
