@@ -20,6 +20,16 @@ interface ITokenViewer {
         uint256 allowance;
     }
 
+    /**
+     * getTokens is a function that retrieves information about a set of token contracts
+     * given their addresses and returns the information in the form of an array of TokenDto objects.
+     *
+     * @param tokens an array of addresses of token contracts
+     * @param user the address of the user whose token information is to be retrieved
+     * @param spender the address of the spender whose token information is to be retrieved
+     *
+     * @return an array of TokenDto objects containing information about the token contracts
+     */
     function getTokens(
         address[] calldata tokens,
         address user,
