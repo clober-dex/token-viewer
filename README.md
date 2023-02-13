@@ -7,7 +7,7 @@
 - Fetch name, symbol, decimals, user balance, spender allowance for multiple ERC-20 token and ETH with one RPC call.
 - Supports custom RPC URL.
 
-## Support Chains
+## Supported Chains
 
 We plan to support more chains.
 
