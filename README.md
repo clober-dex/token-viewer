@@ -19,6 +19,7 @@ We plan to support more chains.
 | Goerli              | `0x9C11068da5E8956D14ca6f4a8c9E2b782B99fdfB`            |
 | Arbitrum Goerli     | `0x9C11068da5E8956D14ca6f4a8c9E2b782B99fdfB`            |
 | Testnet zkEVM Mango | `0xf902b835bE747Cb490b9a60DDAB39d2023536798`            |
+| Zksync Goerli       | `0xCBde0e347b3f96fBcbD1177200C5e9B85b242afd`            |
 
 ## Installation
 
