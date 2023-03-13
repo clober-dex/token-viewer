@@ -1,3 +1,4 @@
+src/addresses.ts
 node_modules
 .env
 coverage
