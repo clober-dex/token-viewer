@@ -12,7 +12,7 @@
   },
   "scripts": {
     "docs": "typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts",
-    "build": "node script/prepare.js && tsc",
+    "build": "npm run compile && node script/prepare.js && tsc",
     "prepublishOnly": "npx hardhat typechain && tsc",
     "compile": "TS_NODE_TRANSPILE_ONLY=1 npx hardhat compile && npx hardhat typechain",
     "test": "npx hardhat test",
