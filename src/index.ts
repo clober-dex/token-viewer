@@ -3,6 +3,7 @@ import { ethers } from 'ethers'
 import { ITokenViewer, TokenViewer__factory } from '../typechain'
 
 import { NETWORK_RPC_URLS } from './constants'
+import { ADDRESSES } from './addresses'
 
 /**
  * Gets token balances and allowances of a user for a list of contracts.
@@ -28,8 +29,7 @@ export const getTokens = async (
     rpcUrl || NETWORK_RPC_URLS[chainId],
   )
   try {
-    const contractAddr =
-      require(`../../deployments/${chainId}/TokenViewer.json`).address
+    const contractAddr = ADDRESSES[chainId]
     const tokenViewer = await TokenViewer__factory.connect(
       contractAddr,
       provider,

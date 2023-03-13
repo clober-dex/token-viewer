@@ -1,11 +1,10 @@
 {
   "name": "token-viewer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "./dist/src/index.js",
   "files": [
-    "/dist",
-    "/deployments"
+    "/dist"
   ],
   "repository": {
     "type": "git",
@@ -13,7 +12,7 @@
   },
   "scripts": {
     "docs": "typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts",
-    "build": "tsc",
+    "build": "node script/prepare.js && tsc",
     "prepublishOnly": "npx hardhat typechain && tsc",
     "compile": "TS_NODE_TRANSPILE_ONLY=1 npx hardhat compile && npx hardhat typechain",
     "test": "npx hardhat test",
