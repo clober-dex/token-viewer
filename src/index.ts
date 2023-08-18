@@ -14,6 +14,7 @@ import { ADDRESSES } from './addresses'
  * @param [spender=0x0000000000000000000000000000000000000000] The address of the spender to retrieve the allowances from.
  * @param rpcUrl - Optional parameter to provide a custom RPC URL.
  *
+ * @param contractAddr
  * @returns An array of token symbols, decimals, balances and allowances.
  * The last element has the symbol, decimal, and balance of the native asset (ETH).
  * Empty array for unsupported chains.
@@ -24,14 +25,14 @@ export const getTokens = async (
   user: string = ethers.constants.AddressZero,
   spender: string = ethers.constants.AddressZero,
   rpcUrl?: string,
+  contractAddr?: string,
 ): Promise<ITokenViewer.TokenDtoStructOutput[]> => {
   const provider = new ethers.providers.JsonRpcProvider(
     rpcUrl || NETWORK_RPC_URLS[chainId],
   )
   try {
-    const contractAddr = ADDRESSES[chainId]
     const tokenViewer = await TokenViewer__factory.connect(
-      contractAddr,
+      contractAddr || ADDRESSES[chainId],
       provider,
     )
     return await tokenViewer.getTokens(tokens, user, spender)
